@@ -11,6 +11,7 @@ app.use(express.json({extended:false}));
 app.get('/',(req,res) =>
 res.json({msg:'json file dali'}));
 
+app.use('/tickets/booking',require('./routes/users'));
 
 const PORT = process.env.PORT || 3000;
 
